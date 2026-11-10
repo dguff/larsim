@@ -15,31 +15,37 @@ theta_setting_0_90 : {
   maxTheta: 1.5707
 }
 
+// direction (0, 0, 1)
 g4gps_dir_pos_z : {
   rot1: [1, 0, 0]
   rot2: [0, -1, 0]
 }
 
+// direction (0, 0, -1)
 g4gps_dir_neg_z : {
   rot1: [1, 0, 0]
   rot2: [0, 1, 0]
 }
 
+// direction (1, 0, 0)
 g4gps_dir_pos_x : {
   rot1: [0, 1, 0]
   rot2: [0, 0, -1]
 }
 
+// direction (-1, 0, 0)
 g4gps_dir_neg_x : {
   rot1: [0, 1, 0]
   rot2: [0, 0, 1]
 }
 
+// direction (0, 1, 0)
 g4gps_dir_pos_y : {
   rot1: [0, 0, 1]
   rot2: [-1, 0, 0]
 }
 
+// direction (0, -1, 0)
 g4gps_dir_neg_y : {
   rot1: [0, 0, 1]
   rot2: [1, 0, 0]
