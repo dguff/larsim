@@ -315,7 +315,8 @@ namespace evgen {
   geo::Vector_t G4GPSAngDist::generate(CLHEP::HepRandomEngine& engine)
   {
     G4EngineGuard guard{engine};
-    G4ParticleMomentum dir = fAngDist->GenerateOne();
+    G4ThreeVector dir = fAngDist->GenerateOne();
+    dir.setMag(1.0); // ensure unit vector
     return {dir.x(), dir.y(), dir.z()};
   }
 
